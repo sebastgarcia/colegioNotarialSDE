@@ -208,24 +208,6 @@ header{
   color: var(--primary);
 }
 
-@media (min-width: 992px){
-  .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    min-height: 98px;
-  }
-
-  main{
-    min-height: calc(100vh - 102px - 315px);
-  }
-
-  
-  .input-search{
-    min-width: 350px;
-  }
-}
-
-
 /*NAVBAR ends*/
 
 input::-webkit-outer-spin-button,
@@ -640,6 +622,39 @@ footer a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+.avatar .dropdown-toggle::after{
+  content: none;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: currentColor;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px){
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    min-height: 98px;
+  }
+
+  main{
+    min-height: calc(100vh - 102px - 315px);
+  }
+
+  
+  .input-search{
+    min-width: 350px;
+  }
+
+  .navbar-expand-lg .navbar-nav  .avatar .dropdown-menu {
+    position: absolute;
+    margin-top: -20px;
+}
 }
 
 
