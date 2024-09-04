@@ -685,6 +685,12 @@ footer a:hover{
   .accordion{
     width: 100%;
   }
+
+ #galeria .list-item-wrapper, 
+ #actualidad .list-item-wrapper,
+ #eventos .list-item-wrapper {
+    padding: 10px;
+  } 
 }
 
 
@@ -734,6 +740,8 @@ footer a:hover{
 
 .list-item-wrapper {
   padding: 10px;
+  display: flex;
+  justify-content: center;
 } 
  
  #eventos .list-item-wrapper {
@@ -743,6 +751,21 @@ footer a:hover{
 #nav-search-container{
   width: 80%;
 }
+
+.autoridad{
+  flex-direction: column;
+  max-height: unset;
+}
+
+.cargo{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.ley{
+max-height: unset;
+}
+
 
 }
 
@@ -761,6 +784,9 @@ padding-bottom: 16px;
     width: 100%!important;
   }
 
+  .list{
+    margin: 0;
+  }
 
 }
 
