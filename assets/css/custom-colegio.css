@@ -784,11 +784,6 @@ max-height: unset;
   #faq-contacto > div > div > *:not(:last-child){
     padding: 0 0 16px 0;
     text-align: center;
-
-  }
-
-  #faq-contacto > div > div >p{
-    text-align: center;
     width: 100%!important;
   }
 
