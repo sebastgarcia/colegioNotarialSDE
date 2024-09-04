@@ -627,6 +627,12 @@ footer a:hover{
   background-color: transparent;
 }
 
+#faq-contacto > div > div > *:not(:last-child){
+  padding: 0 16px 0 0;
+
+}
+
+
 @media (min-width: 992px){
   .navbar-expand-lg {
     flex-wrap: nowrap;
@@ -776,7 +782,8 @@ max-height: unset;
   }
 
   #faq-contacto > div > div > *:not(:last-child){
-padding-bottom: 16px;
+    padding: 0 0 16px 0;
+
   }
 
   #faq-contacto > div > div >p{
