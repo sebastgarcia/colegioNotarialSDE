@@ -1,8 +1,9 @@
 :root {
   /* --primary: #344051; */
-  --primary: #141C24;
+  --primary: #344051;
   --rojo: #DA251C;
-  --celeste: #76AADA;
+/*  --celeste: #76AADA;*/
+  --celeste: #2B4CAF;/*nuevo color*/
   --amarillo: #FDC14E;
   --negro: #141C24;
   --blanco: #ffffff;
@@ -96,6 +97,10 @@ button#volver{
   border-color: var(--celeste);
   color: var(--blanco);
 
+}
+
+.btn-primary{
+  background-color: var(--celeste);/*nuevo color*/
 }
 
 .btn-celeste:hover{
@@ -212,24 +217,39 @@ input[type=number]{
   -moz-appearance: textfield;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  color: var(--primary);
+}
+
 h2{
   font-size: 36px;
+  font-weight: 600;
+}
+
+.section-title h2{
   font-weight: 700;
 }
 
 
 h5{
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h6{
   font-size: 1rem;
+  font-weight: 600;
+}
+
+.filtros h6{
   font-weight: 700;
+  padding-left: 25px;
+  margin: 0;
 }
 
 
 #home{
-  background-color: rgba(253, 193, 78, .2);
+  /* background-color: rgba(253, 193, 78, .2); */
+  background-color: var(--celeste);/*nuevo color*/
 }
 
 #home .row{
@@ -293,10 +313,11 @@ button.box:hover{
   display: flex;
   align-items: center;
   padding: 24px 10px;
-  border: 3px solid rgba(118, 170, 218, .5);
+  /* border: 3px solid rgba(118, 170, 218, .5); */
+  border: 3px solid var(--celeste);/*nuevo color*/
   border-radius: 10px;
   background-color: var(--blanco);
-  box-shadow: 4px 4px 4px gray;
+  /* box-shadow: 4px 4px 4px gray; */
   max-height: 94px;
 }
 
@@ -319,7 +340,8 @@ text-align: center;
 }
 
 #tramites{
-  background-color: rgba(118, 170, 218, .3);
+  /* background-color: rgba(118, 170, 218, .3); */
+  background-color: var(--celeste);/*nuevo color*/
   padding: 120px 0;
 }
 
@@ -368,6 +390,7 @@ ol.breadcrumb{
 .section-title{
   text-align: center;
   border-bottom: 1px solid var(--celeste);
+  padding: 20px 0 10px 0;
 }
 
 .section-title h2{
@@ -385,6 +408,11 @@ ol.breadcrumb{
 .cargo{
   color: var(--celeste);
   font-size: 1.25rem;
+  font-weight: 700;
+}
+
+p.nombre-autoridad {
+  font-weight: 300;
 }
 
 .foto-autoridad{
@@ -541,6 +569,7 @@ footer a:hover{
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-weight: 300;
 }
 /*Cards ends*/
 
@@ -568,10 +597,18 @@ footer a:hover{
   /* justify-content: center; */
    width: 100%;
   font-weight: 600;    
+
+}
+
+.accordion-header button.collapsed div{
+  
+  color: var(--blanco);/*nuevo color*/
 }
 
 .accordion-header button{
-  background-color: #d9d9d9;
+  background-color: #76AADA;
+  background-color: var(--celeste);/*nuevo color*/
+  
   border-radius: 8px 8px 0 0;
 
 }
@@ -646,7 +683,7 @@ footer a:hover{
 
   
   .input-search{
-    min-width: 350px;
+    min-width: 570px;
   }
 
   .navbar-expand-lg .navbar-nav  .avatar .dropdown-menu {
@@ -719,6 +756,10 @@ footer a:hover{
     text-align: center;
     width: 100%;
     padding-top: 12px;
+  }
+
+  .section-title p {
+    font-weight: 300;
   }
 
   .busqueda.matriculados form{
