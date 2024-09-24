@@ -246,20 +246,18 @@ h6{
   margin: 0;
 }
 
-
 #home{
-  /* background-color: rgba(253, 193, 78, .2); */
-  background-color: var(--celeste);/*nuevo color*/
+  height: 500px;
 }
 
-#home .row{
-  height: 450px;
+.carousel, .carousel-inner, .carousel-item{
+  height: 100%;
 }
 
-#home .foto-colegio{
-  background-image: url(../imagenes/colegio.png);
+#home .foto-carousel{
   background-position: center;
   background-size: cover;
+  height: 100%;
 }
 
 #home .logo-colegio{
@@ -461,6 +459,8 @@ footer a {
 footer a:hover{
   font-weight: 600;
 }
+
+
 
 
 /*Tabla*/
