@@ -178,16 +178,14 @@ header{
 .input-search input{
   border-color: var(--celeste);
   border-right: 0; 
-  border-top-left-radius: 20px; 
-  border-bottom-left-radius: 20px;
+
 }
 
 .input-search button{
   background-color: transparent;
   border-color: var(--celeste);
   border-left: 0; 
-  border-top-right-radius: 20px; 
-  border-bottom-right-radius: 20px;
+
 }
 
 .input-search button:hover{
