@@ -432,8 +432,14 @@ p.nombre-autoridad {
 
 
 .busqueda{
-  background-color: #F1F1F1;
   
+  
+}
+
+.busqueda.matriculados form{
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  background-color: #F1F1F1;
 }
 
 footer{
@@ -468,6 +474,43 @@ footer a:hover{
 
 .table-striped  {
  font-size: 0.875rem;
+}
+
+.table-header:first-child{
+  background-color: #F1F1F1;
+  padding: 1.5rem 0;
+  justify-content: start!important;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.table-header:first-child > .dt-layout-start{
+  width: 40%;
+  justify-content: flex-end!important;
+}
+
+.table-header:first-child > .dt-layout-end{
+  width: 60%;
+}
+
+.table-header:first-child > .dt-layout-end > .dt-search{
+  width: 100%;
+}
+
+.table-header:first-child > .dt-layout-end > .dt-search > .form-control{
+  width: 60%;
+}
+
+.table-header:nth-child(2){
+  margin: .5rem 0;
+  border-top: 1px solid var(--celeste);
+}
+
+
+.active>.page-link, .page-link.active{
+
+  background-color: var(--celeste);
+  border-color: var(--celeste);
 }
 /*Tabla ends*/
 
@@ -760,10 +803,11 @@ footer a:hover{
     font-weight: 300;
   }
 
-  .busqueda.matriculados form{
+  /* .busqueda.matriculados form{
     flex-direction: column;
     row-gap: 20px;
-  }
+    background-color: #F1F1F1;
+  } */
 
 .card.noticia .card-title, .card.evento .card-title{
     display: -webkit-box;
@@ -811,6 +855,16 @@ footer a:hover{
 max-height: unset;
 }
 
+.table-header:first-child > .dt-layout-start{
+  width: 50%;
+}
+
+.table-header:first-child > .dt-layout-end{
+  width: 50%;
+}
+
+
+
 
 }
 
@@ -829,6 +883,36 @@ max-height: unset;
   .list{
     margin: 0;
   }
+  .table-header:first-child{
+    flex-direction: column-reverse;
+
+  }
+
+  .table-header:first-child > .dt-layout-start{
+    width: 100%;
+    margin: 0;
+  }
+  
+  .table-header:first-child > .dt-layout-end{
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .table-header:first-child > .dt-layout-end > .dt-search{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .table-header:first-child > .dt-layout-end > .dt-search > label{
+    width: 10%;
+    min-width: 62px;
+  }
+  
+  .table-header:first-child > .dt-layout-end > .dt-search > .form-control {
+    width: -webkit-fill-available;
+    display: flex;
+}
 
 }
 
@@ -873,4 +957,3 @@ max-height: unset;
   }
 
 }
-

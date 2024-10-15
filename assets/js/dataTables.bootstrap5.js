@@ -67,20 +67,20 @@ $.extend( true, DataTable.defaults, {
 $.extend( true, DataTable.ext.classes, {
 	container: "dt-container dt-bootstrap5",
 	search: {
-		input: "form-control form-control-sm"
+		input: "form-control "
 	},
 	length: {
-		select: "form-select form-select-sm"
+		select: "form-select"
 	},
 	processing: {
 		container: "dt-processing card"
 	},
 	layout: {
-		row: 'row mt-2 justify-content-between',
+		row: 'row justify-content-between table-header',
 		cell: 'd-md-flex justify-content-between align-items-center',
 		tableCell: 'col-12',
-		start: 'dt-layout-start col-md-auto me-auto',
-		end: 'dt-layout-end col-md-auto ms-auto',
+		start: 'dt-layout-start col-md-auto ',
+		end: 'dt-layout-end col-md-auto ',
 		full: 'dt-layout-full col-md'
 	}
 } );
